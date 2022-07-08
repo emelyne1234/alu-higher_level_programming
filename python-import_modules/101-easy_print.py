@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import just_try_it.pyt
+import just_try_it.py
