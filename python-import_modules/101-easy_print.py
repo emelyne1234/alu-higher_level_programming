@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import emelyne
+import just_try_it
