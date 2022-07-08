@@ -3,7 +3,6 @@ if __name__ == "__main__":
     import sys
     
     values = sys.argv
-    number = len(values)
     i = len(values) - 1
 
     if i == 0:
@@ -18,4 +17,4 @@ else:
         for arg in values:
             if i != 0:
                 print("{}: {}".format(i, arg))
-                i = i + 1
+                i +=  1
