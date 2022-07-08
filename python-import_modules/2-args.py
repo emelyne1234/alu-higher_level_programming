@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
+    i = len(sys.argv) - 1
 
+    if i == 0:
+        print("{} arguments.".format(i))
+    elif i == 1:
+        print("{} argument:".format(i))
+    else:
+        print("{} arguments:".format(i))
 
-values = sys.argv
-number = len(values)
-i = 1
-summ = 0
-if number == 1:
-    print("{:d}".format(summ))
-elif number == 2:
-    print("{:d}".format(int(values[1])))
-elif number > 2:
-    while i < number:
-        summ = summ + int(values[i])
-        i = i + 1
-    print("{:d}".format(summ))
+    if i >= 1:
+        i = 0
+        for arg in sys.argv:
+            if i != 0:
+                print("{}: {}".format(i, arg))
+            i += 1
