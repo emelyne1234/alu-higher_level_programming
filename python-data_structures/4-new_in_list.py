@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 # replacing an element in a list at a specific position
 
 def new_in_list(my_list, idx, elements):
