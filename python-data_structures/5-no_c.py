@@ -8,5 +8,7 @@ def no_c(my_string):
     for i in my_string:
         if (i.lower()) == 'c':
             continue
+        elif (i.upper()) == 'C':
+            continue
         temp += i
         return temp
