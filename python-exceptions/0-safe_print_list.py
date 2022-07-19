@@ -1,4 +1,4 @@
-#!usr/bin/bin/python3
+#!usr/bin/python3
 # a function that prints elements of a list
 
 
