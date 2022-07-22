@@ -11,5 +11,5 @@ class square:
     class creates a private instance variable and assigns it
     """
     def __init__(self, size):
-        self.Square_size = size
+        self._Square_size = size
 
