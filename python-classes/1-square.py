@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-
-
 """
-Documentation for modules are tricky
+DOCUMENTATION FOR MODULES IN HERE WILL DO THE TRICK
 """
 
 
-class square:
+class Square:
     """
-    class creates a private instance variable and assigns it
+    CLASS CREATES A PRIVATE SIZE INSTANCE VARIABLE AND ASSIGNS IT
     """
     def __init__(self, size):
-        self._Square_size = size
+        self._Square__size = size
 
