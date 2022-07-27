@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" NO MODULE USED """
+""" NOT USING ANY MODULE """
 
 
-Class LockedClass:
-    """used slots memory"""
+class LockedClass:
+    """ using slot memory for management"""
     __slots__ = "first_name"
