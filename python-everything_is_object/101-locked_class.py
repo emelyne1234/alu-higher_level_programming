@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" no module used"""
+""" NO MODULE USED """
 
 
 Class LockedClass:
