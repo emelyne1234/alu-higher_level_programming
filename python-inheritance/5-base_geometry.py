@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" just a module with one class """
+""" just a module used with one class """
 
 
 Class BaseGeometry:
