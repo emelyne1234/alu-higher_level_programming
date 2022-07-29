@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" just a module used with one class """
+""" just a module with one class """
 
 
-Class BaseGeometry:
-    """ empty class """
+class BaseGeometry:
+    """empty class """
     pass
