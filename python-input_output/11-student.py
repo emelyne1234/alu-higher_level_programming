@@ -1,54 +1,37 @@
 #!/usr/bin/python3
-"""
-A Student class that defines a Studen (module)
-"""
+"""Defines a class Student."""
 
 
-<<<<<<< HEAD
 class Student:
-    """ 
-    this is a student class 
-    """
+    """Represent a student."""
 
     def __init__(self, first_name, last_name, age):
-        """
-        just doing init for variables
-=======
-class Student():
-    """
-        A Student class that defines a Student
-    """
-    def __init__(self, first_name, last_name, age):
-        """
-            INIT
->>>>>>> 6427b0b5935bbdf2227a51d2669076a7153f394f
+        """Initialize a new Student.
+        Args:
+            first_name (str): The first name of the student.
+            last_name (str): The last name of the student.
+            age (int): The age of the student.
         """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
+        """Get a dictionary representation of the Student.
+        If attrs is a list of strings, represents only those attributes
+        included in the list.
+        Args:
+            attrs (list): (Optional) The attributes to represent.
         """
-<<<<<<< HEAD
-        method converts to json 
-=======
-            retrieves a dictionary representation
-            of a Student instance
->>>>>>> 6427b0b5935bbdf2227a51d2669076a7153f394f
-        """
-        if type(attrs) is list and all([type(x) == str for x in attrs]):
-            return {k: v for k, v in self.__dict__.items() if k in attrs}
-        return(self.__dict__)
+        if (type(attrs) == list and
+                all(type(ele) == str for ele in attrs)):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        return self.__dict__
 
     def reload_from_json(self, json):
+        """Replace all attributes of the Student.
+        Args:
+            json (dict): The key/value pairs to replace attributes with.
         """
-<<<<<<< HEAD
-        return json 
-        """
-        for i,j in json.items():
-            self.__dict__(i) = j
-=======
-        """
-        for i, j in json.items():
-            self.__dict__[i] = j
->>>>>>> 6427b0b5935bbdf2227a51d2669076a7153f394f
+        for k, v in json.items():
+            setattr(self, k, v)
