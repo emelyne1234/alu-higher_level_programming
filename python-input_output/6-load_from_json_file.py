@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" use json module to use functions """
+""" use json module """
 import json
-""" module converts object to json and writes to file """
+""" read and load with json module """
 
 
-def save_to_json_file(my_obj, filename):
-    """ converts to json and writes to file """
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(json.dumps(my_obj))
+def load_from_json_file(filename):
+    """ read json from file and convert to object """
+    with open(filename, "r", encoding="utf-8") as f:
+        return json.loads(f.read())
