@@ -3,6 +3,5 @@
 
 
 def is_kind_of_class(obj, a_class):
-    """ function returns true for any existence of obj by its own or from relatives """
+    """ returns true for any existence of obj from relative or not """
     return isinstance(obj, a_class)
-
