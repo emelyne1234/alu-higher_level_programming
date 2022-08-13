@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" the module defines the division function in a matrix """
+""" defines matrix division function """
 
 
 def matrix_divided(matrix, div):
