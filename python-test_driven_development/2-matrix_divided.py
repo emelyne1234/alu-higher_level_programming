@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" this module defines matrix division function """
+""" this module divides all elements of a matrix """
 
 
 def matrix_divided(matrix, div):
-    """ this function divides all elements of a matrix """
+    """ this function returns new matrix """
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     if div == 0:
