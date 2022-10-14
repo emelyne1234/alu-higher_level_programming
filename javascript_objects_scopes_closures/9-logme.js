@@ -4,4 +4,4 @@ exports.logMe = function (item) {
   const a = counter;
   console.log(a + ': ' + item);
   counter++
-};
+}
